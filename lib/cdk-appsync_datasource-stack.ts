@@ -43,5 +43,10 @@ export class CdkAppsyncDatasourceStack extends cdk.Stack {
       typeName: "Query",
       fieldName: "hello",
     });
+
+    lambda_data_source.createResolver({
+      typeName: "Query",
+      fieldName: "myCustomMessage",
+    });
   }
 }
